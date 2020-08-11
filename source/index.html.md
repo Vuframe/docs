@@ -234,6 +234,8 @@ These Endpoints allow uploading new 3D files to VUFRAME® Studio and processing 
     "presigned_url": "<S3 upload URL>",
     "callback_url": "<Public API callback URL>",
     "upload_action": "upload as new item",
+    "upload_filename": "generated unique filename",
+    "resolved_content_type": "recognized content type"
 }
 ```
 
@@ -249,7 +251,7 @@ Parameter | Type | Description
 --------- | ---- | -----------
 folder_token | string | token of the folder or SmartVu the new 3D item should be created in
 folder_type | string | "folder" or "feature" depending on whether the item should be created in a folder or a SmartVu
-filename | string | filename of the 3D file that should be uploaded
+filename | string | filename with file type (see [List of supported file types](#upload-types)) of the 3D file that should be uploaded
 content_type | string | content type identifier describing the type of 3D file that should be uploaded (see [List of supported content types](#upload-types))
 
 ## Process a new item
