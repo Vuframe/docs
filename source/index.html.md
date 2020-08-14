@@ -52,7 +52,7 @@ Creates an authentication token for a VUFRAME® Studio user. This token can then
 
 ### HTTP Request
 
-`POST https://api.vuframe.com/public/v1/:app_token/create_token`
+`POST https://api.vuframe.com/public/v1/sso/:app_token/create_token`
 
 <aside class="notice">
 Replace <code>:app_token</code> with your SSO App Token.
